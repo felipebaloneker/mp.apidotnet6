@@ -14,7 +14,7 @@ namespace Mp.ApiDotNet6.Domain.Entities
 
         public string CodErp { get; private set; }
         public decimal Price { get; private set; }
-
+        public ICollection<Purchase> Purchases { get; private set; }
         public Product(string name, string codErp, decimal price)
         {
             Validation(name, codErp, price);
